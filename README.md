@@ -29,3 +29,9 @@ npm install axios
 
 //una vez instalado todo, solo se debe ejecutar esto para levantar el front
 npm run dev
+
+//(opcional) usar estas extensiones en el vscode:
+npm Intellisense
+PostCSS Language Support
+Tailwind CSS IntelliSense
+
