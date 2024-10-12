@@ -34,7 +34,7 @@ const Login = () => {
 
     return (
         <div className="flex h-full w-screen">
-            <div className="w-[40%] flex justify-center bg-gray-200 items-center">
+            <div className="w-[40%] flex justify-center bg-gradient-to-r from-gray-200 via-gray-200 to-gray-300 items-center">
                 <div className="bg-white h-[65%] p-8 rounded-lg border-gray-600 border-4">
                     <h1 className="font-montserrat text-5xl text-black">
                         Login
@@ -85,7 +85,12 @@ const Login = () => {
                     </form>
                 </div>
             </div>
-            <div className="bg-gray-700 w-[60%]"></div>
+            <div className="flex items-start justify-end relative bg-gradient-to-r from-gray-800 via-gray-900 to-gray-900 w-[60%]">
+            <div className="absolute w-64 h-64 bg-[url('assets/UCN.png')] bg-cover bg-center translate-y-16 -translate-x-16">
+            </div>
+            </div>
+
+
         </div>
     );
 };
