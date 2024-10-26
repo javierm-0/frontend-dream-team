@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.bar-left {
+    transition: width 0.3s ease, opacity 0.3s ease;
+    width: 280px;
+    height: 100%;
+    background-color: #164e63bb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dash-panel {
+    margin-left: 200px;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+    height: 85vh;
+    overflow-y: auto; 
+    color: black;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.dash-panel h2 {
+    color: #164e63bb;
+}
+
+.dash-panel p {
+    color: black;
+}
+
+.dash-panel.collapsed {
+    width: 90%;
+    margin-left: 50px;
+}
+
+.logo-banner {
+    width: 170px;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    margin-bottom: 10px;
+    transition: opacity 0.15s ease;
+}
+
+.bar-left.collapsed {
+    width: 50px;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.bar-left.collapsed .logo-banner {
+    opacity: 0;
+}
+
+.bar-left.collapsed .logo-banner {
+    opacity: 0;
+}
+
+.bar-left.collapsed + .toggle-button {
+    left: 3px;
+}
+
+.bar-left .function-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bar-left.collapsed .function-item {
+    opacity: 0; 
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 3%;
+    left: 220px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: left 0.3s ease;
+}
+
+.function-item {
+    position: relative;
+    top: 18%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+    transition: background-color 0.15s, opacity 0.15s ease;
+}
+
+.function-item img {
+    margin-left: 10px;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.function-text {
+    margin-left: 8px;
+}
